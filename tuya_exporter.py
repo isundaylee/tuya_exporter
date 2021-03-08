@@ -44,6 +44,7 @@ class Collector:
         for config in self.configs:
             d = tinytuya.OutletDevice(config.device_id, config.ip, config.local_key)
             d.set_version(3.3)
+            d.updatedps([18, 19, 20])
             data = d.status()
             current_gauge.add_metric([config.name], float(data["dps"]["18"]) / 1000.0)
             power_gauge.add_metric([config.name], float(data["dps"]["19"]) / 10.0)

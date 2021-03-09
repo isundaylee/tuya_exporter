@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import time
 from typing import List
 
 import click
@@ -64,7 +65,7 @@ def main(devices, port):
     start_http_server(port)
 
     while True:
-        pass
+        time.sleep(0.1)
 
 
 if __name__ == "__main__":

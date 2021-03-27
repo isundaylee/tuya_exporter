@@ -1,0 +1,12 @@
+kind: pipeline
+name: default
+
+steps:
+- name: docker
+  image: plugins/docker
+  settings:
+    username: isundaylee
+    password:
+      from_secret: docker-hub-password
+    repo: isundaylee/tuya_exporter
+    tags: latest

@@ -1,0 +1,15 @@
+[Unit]
+Description=Tuya Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=tuya
+Group=tuya
+Type=simple
+EnvironmentFile=/home/tuya/tuya_exporter/tuya_exporter.conf
+ExecStart=/home/tuya/tuya_exporter/tuya_exporter.py $DEVICES
+
+[Install]
+WantedBy=multi-user.target
+

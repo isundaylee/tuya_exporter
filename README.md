@@ -18,8 +18,8 @@ You can either run `tuya_exporter.py` directly or run it via Docker using the
 configuration as arguments on the command line with this format:
 
 ```
-$ tuya_exporter.py <name1>:::<ip1>:::<device_id1>:::<local_key1>:::<tuya_version> \
-    <name2>:<ip2>:::<device_id2>:::<local_key2>:::<tuya_version> \
+$ tuya_exporter.py <name1>:::<ip1>:::<device_id1>:::<local_key1>:::<tuya_version>:::<tuya_category> \
+    <name2>:<ip2>:::<device_id2>:::<local_key2>:::<tuya_version>:::<tuya_category> \
     ...
 ```
 

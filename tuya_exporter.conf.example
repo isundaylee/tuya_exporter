@@ -1,2 +1,2 @@
-DEVICES="My Computer:192.168.1.18:azeaz213azeaze12323" "My Laptop:192.168.1.23:azezaE123azeaze123"
+DEVICES="'My Computer:192.168.1.18:::deviceid:::secret:::tuya_float_version:::tuya_category' 'My Laptop:::192.168.1.23::deviceid:::secret:::3.4:::tdq'"
 

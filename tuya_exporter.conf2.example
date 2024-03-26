@@ -1,0 +1,4 @@
+DEVICES="-d deviceid -d device2id -d device3id"
+PORT=9191
+CONFIG="/home/tuya_exporter/devices.json"
+

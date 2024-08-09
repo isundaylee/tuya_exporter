@@ -32,3 +32,8 @@ here](https://github.com/iRayanKhan/homebridge-tuya/wiki/Get-Local-Keys-for-your
 For my test plugs, device IDs are 22-character alphanumeric strings, and
 local keys are 16-character alphanumeric strings. But they might be different
 for your plugs.
+
+## Changelog
+
+- v0.0.2
+    - Support local keys with `:` in them.

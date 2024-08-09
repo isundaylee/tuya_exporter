@@ -19,7 +19,7 @@ class DeviceConfig:
 
     @classmethod
     def parse(cls, s) -> "DeviceConfig":
-        name, ip, device_id, local_key = s.split(":")
+        name, ip, device_id, local_key = s.split(":", maxsplit=3)
         return cls(
             name=name,
             ip=ip,
